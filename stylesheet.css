@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; /*heading*/
+}
+body{
+    background: white;
+}
+/*------------------------- navbar -----------------------*/
+.navbar{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    margin:0rem 2.5rem 0 2.5rem;
+}
+.navbar button{
+ background-color:white ;
+border: 1px solid hsl(322, 100%, 66%);
+color: hsl(322, 100%, 66%);
+padding: 0;
+font-family: 'open Sans',sans-serif;
+cursor: pointer;
+font-size: 0.84rem;
+width: 7.2rem;
+height: 2.1rem;
+border-radius: 2rem;
+margin-left: 1rem;
+transition: 1s;
+font-weight: 400;
+}
+.navbar button:hover{
+    background-color:hsl(322, 100%, 66%) ; 
+    color: white;
+}
+/*------------------------- navbar -----------------------*/
+/*------------------------- description -----------------------*/
+.description{
+    background-color: white;
+    text-align: center;
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.4rem;
+   
+}
+.description h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color:  hsl(192, 100%, 9%);
+    margin-top: 10rem;
+}
+.description p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0 30% 0 30%; 
+    color: hsl(192, 100%, 9%);
+}
+.description button{
+ background-color:hsl(322, 100%, 66%) ;
+border: 1px solid hsl(322, 100%, 66%);
+color: white;
+padding:0;
+font-family: 'open Sans',sans-serif;
+cursor: pointer;
+font-size: 1rem;
+width: 45vh;
+height: 9vh;
+border-radius: 2rem;
+transition: 1s;
+font-weight: 600;
+box-shadow:  0px 5px 10px #8888;
+margin-top:1rem;
+}
+.description button:hover{
+    background-color:hsl(322, 100%, 66%) ; 
+    color: white;
+}
+
+/*------------------------- description -----------------------*/
+/*------------------------- second-page -----------------------*/
+.second-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.second-page svg{
+transform: scale(0.9);
+}
+/*------------------------- second-page -----------------------*/
+/*------------------------- stats -----------------------*/
+.stats{
+    display: flex;
+    flex-direction: row;
+    column-gap:2rem;
+    justify-content: space-evenly;
+    height: 43vh;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.stats p:first-of-type{
+     font-family: 'Poppins', sans-serif; 
+     color: hsl(192, 100%, 9%);
+     font-size: 4.2rem;
+     font-weight: 700;
+}
+.stats p:last-of-type{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.7;
+}
+/*------------------------- stats -----------------------*/
+/*------------------------- grow -----------------------*/
+.grow{
+    margin-bottom:10vh;
+}
+.grow .grow-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:65vh;
+    align-items: center;
+    background: hsl(210, 64%, 91%);
+}
+.grow .right-side{
+    grid-column: 2/3; 
+    width: 100%; 
+    height: auto;
+    transform: scale(0.7); 
+    position: relative;
+    top: -2rem;
+}
+.grow .left-side{
+    grid-column: 1/2;
+    row-gap: 1.2rem;
+    margin-bottom: 5rem;
+}
+.grow .left-side *{
+    margin-left: 17%;
+}
+.grow .left-side h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: hsl(192, 100%, 9%);
+}
+.grow .left-side p{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.grow .borders{
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 17px;
+}
+.grow svg path{
+    fill: hsl(210, 64%, 91%);;
+}
+
+/*------------------------- grow -----------------------*/
+/*------------------------- convertation -----------------------*/
+.conversation{
+  background: white;
+  margin-top: 10%;
+}
+.conversation-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.conversation .left-side{
+    grid-column: 1/2; 
+    width: 100%; 
+    height: auto;
+    transform: scale(0.7); 
+    position: relative;
+    top: -2rem; 
+}
+.conversation-body .right-side{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.conversation .right-side *{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.conversation .right-side h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: hsl(192, 100%, 9%);
+}
+.conversation .right-side p{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/*------------------------- conversation -----------------------*/
+footer .borders{
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 17px;
+}
+footer {
+    
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(192, 100%, 9%);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+footer .container .left-side{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+}
+footer .container .left-side>*{
+    margin-left: 17.2%;
+}
+footer .container .left-side .social-icons{
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    width: 20%;
+    height: 3rem;
+    margin-left:15.2% ;
+}
+
+footer .container .left-side .social-icons svg{
+    transform: scale(0.65);
+    cursor: pointer;
+}
+footer .container .left-side .social-icons svg:nth-child(1){
+    grid-column: 1/2;
+}
+footer .container .left-side .social-icons svg:nth-child(2){
+    grid-column: 2/3;
+}
+footer .container .left-side .social-icons svg:nth-child(3){
+    grid-column: 3/4;
+}
+footer .container .left-side >svg{
+    transform: scale(0.6);
+    margin-left: 10%;
+}
+footer .container .left-side >svg path,footer .container .social-icons >svg path{
+    fill: white;
+}
+footer .container .left-side p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 0.8rem;
+    margin-right:40%;
+}
+footer .container .left-side p:first-of-type{
+    margin-bottom: 1.3rem;
+}
+footer .container .left-side p:nth-child(3){
+  margin-bottom: 0.8rem;
+}
+footer .container .left-side p:nth-child(4){
+    margin-bottom: 3rem;
+}
+footer .container .left-side p>span{
+    margin-right: 1.2rem;
+}
+footer .container .right-side{
+    grid-column: 2/3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-top: 1rem;
+}
+footer .container .right-side >*{
+    margin-left: 10%;
+}
+footer .container .right-side textarea{
+    resize: none;
+}
+footer .container .right-side h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+footer .container .right-side p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 0.8rem;
+    margin-right:43%;
+    margin-bottom: 1rem;
+}
+footer .container .right-side .subscribe{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   column-gap: 0.5rem;
+}
+footer .container .right-side .subscribe textarea{
+    border-radius: 5px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(192, 100%, 9%);
+    font-size: 1rem;
+    height:2.7rem;
+    line-height: 2.7rem;
+    text-indent: 7px;
+}
+footer button{
+   background-color:hsl(322, 100%, 66%) ;
+   color: white;
+   padding:0;
+   border: none;
+   font-family: 'open Sans',sans-serif;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 11rem;
+   height: 2.2rem;
+   margin-bottom: 0.3rem;
+   }
+   textarea:focus{
+    outline: none;
+
+   }
+
+
+
+
+
+
+
+
+/* Try it free
+
+  Build The Community Your Fans Will Love
+
+  Huddle re-imagines the way we build communities. You have a voice, but so does 
+  your audience. Create connections with your users as you engage in genuine discussion. 
+
+  Get Started For Free
+
+  1.4k+
+  Communities Formed
+
+  2.7m+
+  Messages Sent
+
+  Grow Together
+  Generate meaningful discussions with your audience and build a strong, loyal community. 
+  Think of the insightful conversations you miss out on with a feedback form. 
+
+  Flowing Conversations
+  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+  just-in-time loading for a more natural flow.
+
+  Your Users
+  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+  once signed in to your app, your users can start chatting immediately.
+
+  Ready To Build Your Community?
+  Get Started For Free
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+  vestibulum a, ultrices quis sem.
+  
+  Phone: +1-543-123-4567
+  example@huddle.com
+
+  Newsletter
+  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+  send you spam or pass on your email address
+
+  Subscribe
+  */
